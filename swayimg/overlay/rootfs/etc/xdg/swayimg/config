@@ -1,0 +1,24 @@
+# Swayimg configuration file.
+# vim: filetype=dosini
+
+[general]
+mode = slideshow
+
+[drm]
+mode = 1920x1080
+
+[slideshow]
+time = 4
+
+[list]
+order = random
+recursive = yes
+
+[font]
+name = Play
+size = 48
+color = #eeeeeeff
+
+[info]
+info_timeout = 0
+padding = 20

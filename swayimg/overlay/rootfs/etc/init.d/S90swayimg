@@ -1,0 +1,29 @@
+#!/bin/sh
+
+#
+# Service to start swayimg
+#
+
+do_start() {
+  echo -n "Starting swayimg: "
+  LANG="ru_RU.UTF-8" swayimg /photos &
+  echo "OK"
+}
+
+do_stop() {
+  echo -n "Stopping swayimg: "
+  killall swayimg
+  echo "OK"
+}
+
+case "$1" in
+  start)
+    do_start;;
+  stop)
+    do_stop;;
+  restart)
+    do_stop; do_start;;
+  *)
+    echo "Usage: $0 {start|stop|restart}"
+    exit 1;;
+esac

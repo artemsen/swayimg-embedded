@@ -1,10 +1,7 @@
-# TV Slide Show
+# Swayimg slide show on embedded Linux device
 
-This project is a minimalistic OS image for playing slideshows on TV.
-This project contains:
-- Buildroot layer for the [Mango PI MQ-Pro](https://mangopi.org/mqpro) board (Allwinner D1 RISC-V).
-- DRM mode slide show application.
-- Script to convert photos to TV native size.
+This project is intended to build a minimalistic OS image for the [Mango PI MQ-Pro](https://mangopi.org/mqpro)
+board (Allwinner D1 RISC-V). The board can be connected to a TV to display a slide show 24x7.
 
 ## Build
 
@@ -19,11 +16,11 @@ This project contains:
    ```
 3. Set default config for buildroot:
    ```shell
-   make -C buildroot BR2_EXTERNAL=$(pwd)/buildroot.external O=$(pwd)/.build mqpro_defconfig
+   make -C buildroot BR2_EXTERNAL=$(pwd)/swayimg O=$(pwd)/.build mqpro_defconfig
    ```
 4. Build the project:
    ```shell
-   make -C buildroot BR2_EXTERNAL=$(pwd)/buildroot.external O=$(pwd)/.build
+   make -C buildroot BR2_EXTERNAL=$(pwd)/swayimg O=$(pwd)/.build
    ```
 
 ## Write SD card image

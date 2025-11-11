@@ -1,4 +1,4 @@
-FROM ubuntu:25.04
+FROM ubuntu:24.04
 
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt update && apt upgrade --yes && apt install --no-install-recommends --yes \
@@ -9,9 +9,11 @@ RUN apt update && apt upgrade --yes && apt install --no-install-recommends --yes
     cpio \
     file \
     git \
+    libncurses-dev \
     rsync \
     screen \
     unzip \
-    wget
+    wget \
+    wpasupplicant
 
 USER ubuntu

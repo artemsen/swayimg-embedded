@@ -1,0 +1,5 @@
+config BR2_PACKAGE_SWAYIMG
+	bool "Swayimg"
+	default y
+	help
+	  Swayimg image viewer
