@@ -5,10 +5,12 @@
 mode = slideshow
 
 [drm]
-mode = 1920x1080
+mode = 3840x2160
 
 [slideshow]
 time = 4
+window = #000000ff
+scale = real
 
 [list]
 order = random
@@ -16,7 +18,7 @@ recursive = yes
 
 [font]
 name = Play
-size = 48
+size = 64
 color = #eeeeeeff
 
 [info]
