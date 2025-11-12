@@ -4,7 +4,7 @@
 #
 ################################################################################
 
-SWAYIMG_VERSION = 53cba37aaf30b3ccfa269a98c31dc795aae43ec4
+SWAYIMG_VERSION = 898f71343b23b877d4a067770157a91dbd2d08f2
 SWAYIMG_SITE = $(call github,artemsen,swayimg,$(SWAYIMG_VERSION))
 SWAYIMG_LICENSE = MIT
 SWAYIMG_LICENSE_FILES = LICENSE
