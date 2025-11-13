@@ -8,7 +8,7 @@ mode = slideshow
 mode = 3840x2160
 
 [slideshow]
-time = 4
+time = 8
 window = #000000ff
 scale = real
 
@@ -18,7 +18,7 @@ recursive = yes
 
 [font]
 name = Play
-size = 64
+size = 96
 color = #eeeeeeff
 
 [info]
