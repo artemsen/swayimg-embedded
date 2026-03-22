@@ -1,0 +1,8 @@
+config BR2_PACKAGE_LUAJITRV64
+	bool "luajit"
+	default y
+	help
+	  LuaJIT implements the full set of language features defined
+	  by Lua 5.1. The virtual machine (VM) is API- and
+	  ABI-compatible to the standard Lua interpreter and can be
+	  deployed as a drop-in replacement.

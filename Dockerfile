@@ -1,4 +1,4 @@
-FROM ubuntu:24.04
+FROM ubuntu:26.04
 
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt update && apt upgrade --yes && apt install --no-install-recommends --yes \
@@ -9,6 +9,7 @@ RUN apt update && apt upgrade --yes && apt install --no-install-recommends --yes
     cpio \
     file \
     git \
+    libcrypt-dev \
     libncurses-dev \
     rsync \
     screen \
